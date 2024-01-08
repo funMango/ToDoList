@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A7E9C492B4BADEA003ABCEB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E9C482B4BADEA003ABCEB /* Task.swift */; };
+		5A7E9C4B2B4BCECB003ABCEB /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E9C4A2B4BCECB003ABCEB /* TaskDetailView.swift */; };
 		5AA1A03D2B4B89A60087A1C3 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1A03C2B4B89A60087A1C3 /* ToDoListApp.swift */; };
 		5AA1A03F2B4B89A60087A1C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1A03E2B4B89A60087A1C3 /* ContentView.swift */; };
 		5AA1A0412B4B89A60087A1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1A0402B4B89A60087A1C3 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		5A7E9C482B4BADEA003ABCEB /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5A7E9C4A2B4BCECB003ABCEB /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		5AA1A0392B4B89A60087A1C3 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA1A03C2B4B89A60087A1C3 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		5AA1A03E2B4B89A60087A1C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				5AA1A0402B4B89A60087A1C3 /* Assets.xcassets */,
 				5AA1A0662B4B8AE30087A1C3 /* GoogleService-Info.plist */,
 				5AA1A0422B4B89A60087A1C3 /* Preview Content */,
+				5A7E9C4A2B4BCECB003ABCEB /* TaskDetailView.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7E9C4B2B4BCECB003ABCEB /* TaskDetailView.swift in Sources */,
 				5AA1A03F2B4B89A60087A1C3 /* ContentView.swift in Sources */,
 				5A7E9C492B4BADEA003ABCEB /* Task.swift in Sources */,
 				5AA1A03D2B4B89A60087A1C3 /* ToDoListApp.swift in Sources */,
