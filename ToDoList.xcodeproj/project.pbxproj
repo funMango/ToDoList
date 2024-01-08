@@ -16,6 +16,8 @@
 		5AA1A05A2B4B89A60087A1C3 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1A0592B4B89A60087A1C3 /* ToDoListUITestsLaunchTests.swift */; };
 		5AA1A0672B4B8AE30087A1C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1A0662B4B8AE30087A1C3 /* GoogleService-Info.plist */; };
 		5AA1A06A2B4B8DF30087A1C3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA1A0692B4B8DF30087A1C3 /* FirebaseAnalytics */; };
+		5AA1A06D2B4B952A0087A1C3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA1A06C2B4B952A0087A1C3 /* FirebaseFirestore */; };
+		5AA1A06F2B4B96650087A1C3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5AA1A06E2B4B96650087A1C3 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA1A06A2B4B8DF30087A1C3 /* FirebaseAnalytics in Frameworks */,
+				5AA1A06D2B4B952A0087A1C3 /* FirebaseFirestore in Frameworks */,
+				5AA1A06F2B4B96650087A1C3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,7 @@
 				5AA1A04C2B4B89A60087A1C3 /* ToDoListTests */,
 				5AA1A0562B4B89A60087A1C3 /* ToDoListUITests */,
 				5AA1A03A2B4B89A60087A1C3 /* Products */,
+				5AA1A06B2B4B952A0087A1C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +137,13 @@
 			path = ToDoListUITests;
 			sourceTree = "<group>";
 		};
+		5AA1A06B2B4B952A0087A1C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +162,8 @@
 			name = ToDoList;
 			packageProductDependencies = (
 				5AA1A0692B4B8DF30087A1C3 /* FirebaseAnalytics */,
+				5AA1A06C2B4B952A0087A1C3 /* FirebaseFirestore */,
+				5AA1A06E2B4B96650087A1C3 /* FirebaseFirestoreSwift */,
 			);
 			productName = ToDoList;
 			productReference = 5AA1A0392B4B89A60087A1C3 /* ToDoList.app */;
@@ -611,6 +625,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5AA1A0682B4B8DF30087A1C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		5AA1A06C2B4B952A0087A1C3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AA1A0682B4B8DF30087A1C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5AA1A06E2B4B96650087A1C3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AA1A0682B4B8DF30087A1C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

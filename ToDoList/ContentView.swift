@@ -6,8 +6,17 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestoreSwift
 
 struct ContentView: View {
+    
+    private let db: Firestore
+    
+    init() {
+        self.db = Firestore.firestore()
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,6 +28,6 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView(db: <#Firestore#>)
+//}
