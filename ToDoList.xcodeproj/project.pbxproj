@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A7E9C492B4BADEA003ABCEB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E9C482B4BADEA003ABCEB /* Task.swift */; };
 		5AA1A03D2B4B89A60087A1C3 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1A03C2B4B89A60087A1C3 /* ToDoListApp.swift */; };
 		5AA1A03F2B4B89A60087A1C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1A03E2B4B89A60087A1C3 /* ContentView.swift */; };
 		5AA1A0412B4B89A60087A1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1A0402B4B89A60087A1C3 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A7E9C482B4BADEA003ABCEB /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5AA1A0392B4B89A60087A1C3 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA1A03C2B4B89A60087A1C3 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		5AA1A03E2B4B89A60087A1C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A7E9C472B4BADD2003ABCEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A7E9C482B4BADEA003ABCEB /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5AA1A0302B4B89A60087A1C3 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		5AA1A03B2B4B89A60087A1C3 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				5A7E9C472B4BADD2003ABCEB /* Models */,
 				5AA1A03C2B4B89A60087A1C3 /* ToDoListApp.swift */,
 				5AA1A03E2B4B89A60087A1C3 /* ContentView.swift */,
 				5AA1A0402B4B89A60087A1C3 /* Assets.xcassets */,
@@ -284,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA1A03F2B4B89A60087A1C3 /* ContentView.swift in Sources */,
+				5A7E9C492B4BADEA003ABCEB /* Task.swift in Sources */,
 				5AA1A03D2B4B89A60087A1C3 /* ToDoListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

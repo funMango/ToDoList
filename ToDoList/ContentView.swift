@@ -12,6 +12,7 @@ import FirebaseFirestoreSwift
 struct ContentView: View {
     
     private let db: Firestore
+    @State private var title: String = ""
     
     init() {
         self.db = Firestore.firestore()
@@ -19,15 +20,37 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TextField("Enter task", text: $title)
+                .textFieldStyle(.roundedBorder)
+                .padding(.top, 30)
+            Spacer()
+            Button() {
+                let task = Task(title: self.title)
+                saveTask(task: task)
+            } label: {
+                Text("save")
+            }
         }
         .padding()
     }
 }
 
-//#Preview {
-//    ContentView(db: <#Firestore#>)
-//}
+extension ContentView {
+    func saveTask(task: Task) {
+        do {
+            _ = try db.collection("tasks").addDocument(from: task) { err in
+                if let err = err {
+                    print(err.localizedDescription)
+                } else {
+                    print("Document has been saved!")
+                }
+            }
+        } catch let err{
+            print(err.localizedDescription)
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
